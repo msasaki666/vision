@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "vision"
+name = "server"
 version = "0.1.0"
 description = ""
 authors = ["Sasaki-Motoaki <voyegesansretour1@gmail.com>"]
