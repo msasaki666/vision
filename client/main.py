@@ -19,7 +19,7 @@ if current_page_select == "line":
 if current_page_select == "area":
     st.area_chart(df)
 if current_page_select == "json":
-    if "apenapijson" not in st.session_state:
+    if "openapijson" not in st.session_state:
         res = requests.get("https://petstore.swagger.io/v2/swagger.json")
-        st.session_state["apenapijson"] = res.json()
-    st.json(st.session_state.apenapijson)
+        st.session_state["openapijson"] = res.json()
+    st.json(st.session_state.openapijson)
