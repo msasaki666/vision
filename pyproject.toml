@@ -6,8 +6,14 @@ authors = ["Sasaki-Motoaki <voyegesansretour1@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = "^0.72.0"
 
 [tool.poetry.dev-dependencies]
+mypy = "^0.931"
+flake8 = "^4.0.1"
+black = "^21.12b0"
+pytest = "^6.2.5"
+isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

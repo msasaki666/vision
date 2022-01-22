@@ -31,5 +31,5 @@
     "zhengxiaoyao0716.intelligence-change-case",
     "mosapride.zenkaku",
   ],
-  "postCreateCommand": "apt-get update && apt-get install -y peco && pip install flake8 black mypy pytest flake8-isort",
+  "postCreateCommand": "apt-get update && apt-get install -y peco",
 }
