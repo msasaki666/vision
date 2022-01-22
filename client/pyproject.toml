@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "client"
+version = "0.1.0"
+description = ""
+authors = ["Sasaki-Motoaki <voyegesansretour1@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.4.0"
+requests = "^2.27.1"
+types-requests = "^2.27.7"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.931"
+flake8 = "^4.0.1"
+black = "^21.12b0"
+pytest = "^6.2.5"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79

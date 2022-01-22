@@ -7,3 +7,9 @@ services:
     command: tail -f /dev/null
     volumes:
       - ./server:/app
+  client:
+    build:
+      context: ./client
+    command: tail -f /dev/null
+    volumes:
+      - ./client:/app
