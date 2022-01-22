@@ -1,9 +1,9 @@
 version: '3.9'
 
 services:
-  app:
+  server:
     build:
-      context: .
+      context: ./server
     command: tail -f /dev/null
     volumes:
-      - .:/app
+      - ./server:/app
