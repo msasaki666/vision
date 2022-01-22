@@ -1,0 +1,35 @@
+{
+  "name": "app",
+  "dockerComposeFile": [
+    "../docker-compose.yml",
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.guides.bracketPairs": true,
+    "editor.codeActionsOnSave": {
+      // isortを動作させる設定
+      // https://kamatimaru.hatenablog.com/entry/2020/05/04/224543
+      "source.organizeImports": true
+    },
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.formatting.provider": "black",
+    "dotfiles.repository": "msasaki666/dotfiles",
+    "dotfiles.targetPath": "~/dotfiles",
+    "dotfiles.installCommand": "~/dotfiles/install.sh",
+  },
+  "extensions": [
+    "ms-python.python",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "zhengxiaoyao0716.intelligence-change-case",
+    "mosapride.zenkaku",
+  ],
+  "postCreateCommand": "apt-get update && apt-get install -y peco && pip install flake8 black mypy pytest flake8-isort",
+}
