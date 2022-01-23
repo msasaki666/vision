@@ -7,6 +7,7 @@ authors = ["Sasaki-Motoaki <voyegesansretour1@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 fastapi = {extras = ["all"], version = "^0.72.0"}
+python-multipart = "^0.0.5"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.931"
