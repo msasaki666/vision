@@ -9,6 +9,7 @@ python = "^3.10"
 fastapi = {extras = ["all"], version = "^0.72.0"}
 python-multipart = "^0.0.5"
 python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.931"
@@ -20,3 +21,6 @@ isort = "^5.10.1"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
