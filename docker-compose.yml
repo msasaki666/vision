@@ -4,12 +4,12 @@ services:
   server:
     build:
       context: ./server
-    command: tail -f /dev/null
+    command: bash -c "uvicorn main:app --reload --host 0.0.0.0"
     volumes:
       - ./server:/app
   client:
     build:
       context: ./client
-    command: tail -f /dev/null
+    command: bash -c "streamlit run main.py  --browser.serverAddress=0.0.0.0 --server.runOnSave=true"
     volumes:
       - ./client:/app
