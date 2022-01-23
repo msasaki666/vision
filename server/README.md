@@ -5,6 +5,9 @@
 |black|フォーマッター|
 |pytest|テスト|
 |isort|importをいい感じに並べ替えるやつ|
+|python-jose|JWTトークンの生成と検証を行う|
+|cryptography|一般的な暗号を扱えるようにする|
+|PassLib|パスワードのハッシュ化に必要|
 
 ## 起動
 
